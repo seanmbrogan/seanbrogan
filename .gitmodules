@@ -1,0 +1,9 @@
+[submodule "bytfix"]
+    path = bytfix
+    url = https://github.com/seanmbrogan/bytfix.git
+[submodule "coinchew"]
+    path = coinchew
+    url = https://github.com/seanmbrogan/coinchew.git
+[submodule "inuadam"]
+    path = inuadam
+    url = https://github.com/seanmbrogan/inuadam.git
