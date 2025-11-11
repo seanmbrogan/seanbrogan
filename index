@@ -19,14 +19,14 @@
   <body>
     <div id="particles">
       <div id="intro">
-        <h2 style="font-family: 'Syncopate', sans-serif; font-weight: 10;">Sean Brogan &nbsp </h2>
+        <h2 style="font-family: 'Syncopate', sans-serif; font-weight: 10;">Sean Brogan&nbsp </h2>
         <hr style="width: 50%; background-color: #E83951; border-color: #E83951;">&nbsp <a href="https://www.linkedin.com/in/seanmaxwellbrogan/"
           style="color: white;"><i class="fab fa-linkedin" style="font-size: 2em;"></i></a> &nbsp <a href="https://www.instagram.com/_sean_brogan_"
           style="color: white;"><i class="fab fa-instagram" style="font-size: 2em;"></i></a> &nbsp <a href="https://github.com/seanmbrogan/"
-          style="color: white;"><i class="fab fa-github" style="font-size: 2em;"></i></a> &nbsp <a href="https://twitter.com/seanmbrogan"
-          style="color: white;"><i class="fab fa-twitter" style="font-size: 2em;"></i></a> &nbsp <a
-          href="https://open.spotify.com/user/4kzt3wdtodvuk39hxo2jpyx3o?si=289c5260e4a14b6c" style="color: white;"><i class="fab fa-spotify"
-            style="font-size: 2em;"></i></a> &nbsp <br /><br />
+          style="color: white;"><i class="fab fa-github" style="font-size: 2em;"></i></a> &nbsp 
+          <a href="https://open.spotify.com/user/4kzt3wdtodvuk39hxo2jpyx3o?si=289c5260e4a14b6c" style="color: white;"><i class="fab fa-spotify"
+            style="font-size: 2em;"></i></a> <br />
+            <br />
         <div class=sites>
           <div class=site>
             <span class='span-site'>

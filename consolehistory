@@ -1,0 +1,421 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Video Game Console Timeline</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f5f5;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            padding: 40px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            font-size: 2.2em;
+            margin-bottom: 40px;
+        }
+
+        .timeline {
+            position: relative;
+            margin: 40px 0;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: #ddd;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin: 15px 0;
+            padding: 20px 20px 20px 80px;
+            border-radius: 8px;
+            border: 1px solid #e0e0e0;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 43px;
+            top: 25px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: white;
+            border: 3px solid #bbb;
+        }
+
+        .magnavox { background: #f8f9fa; }
+        .atari { background: #fdf2f2; }
+        .fairchild { background: #f0f8ff; }
+        .mattel { background: #f0fff0; }
+        .coleco { background: #fffaf0; }
+        .nintendo { background: #fff5f5; }
+        .sega { background: #f0f4ff; }
+        .nec { background: #f8f0ff; }
+        .sony { background: #f5f5f5; }
+        .microsoft { background: #f0ffff; }
+
+        .console-details h3 {
+            color: #333;
+            font-size: 1.3em;
+            margin-bottom: 8px;
+        }
+
+        .console-details .date {
+            color: #666;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .console-details .significance {
+            color: #555;
+            line-height: 1.4;
+        }
+
+        .chart-container {
+            margin-top: 50px;
+            padding: 30px;
+            background: #fafafa;
+            border-radius: 8px;
+            border: 1px solid #e0e0e0;
+        }
+
+        .chart-title {
+            text-align: center;
+            color: #333;
+            font-size: 1.6em;
+            margin-bottom: 30px;
+        }
+
+        .chart {
+            display: flex;
+            align-items: end;
+            justify-content: space-around;
+            height: 300px;
+            padding: 20px 0;
+            border-bottom: 2px solid #ddd;
+        }
+
+        .bar {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .bar-fill {
+            width: 50px;
+            border-radius: 4px 4px 0 0;
+            position: relative;
+        }
+
+        .bar-value {
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-weight: bold;
+            color: #333;
+            font-size: 14px;
+        }
+
+        .bar-label {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #555;
+            font-size: 11px;
+            text-align: center;
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+            height: 80px;
+            display: flex;
+            align-items: center;
+        }
+
+        .nintendo-bar { background: #d6d6d6; }
+        .sony-bar { background: #c0c0c0; }
+        .sega-bar { background: #b8b8b8; }
+        .atari-bar { background: #d0d0d0; }
+        .microsoft-bar { background: #c8c8c8; }
+        .magnavox-bar { background: #c4c4c4; }
+        .fairchild-bar { background: #b4b4b4; }
+        .mattel-bar { background: #bbb; }
+        .coleco-bar { background: #cccccc; }
+        .nec-bar { background: #a8a8a8; }
+
+        @media (max-width: 768px) {
+            .timeline-item {
+                padding: 20px 20px 20px 70px;
+            }
+
+            .chart {
+                flex-wrap: wrap;
+                height: auto;
+                gap: 15px;
+            }
+
+            .bar-label {
+                writing-mode: horizontal-tb;
+                height: auto;
+                margin-top: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Timeline of Home Video Game Consoles</h1>
+        
+        <div class="timeline">
+            <div class="timeline-item magnavox">
+                <div class="console-details">
+                    <h3>Magnavox Odyssey</h3>
+                    <div class="date">September 1972</div>
+                    <div class="significance">The world's first home video game console, laying the foundation for the console industry.</div>
+                </div>
+            </div>
+
+            <div class="timeline-item atari">
+                <div class="console-details">
+                    <h3>Atari Pong Console</h3>
+                    <div class="date">November 1975</div>
+                    <div class="significance">Brought the arcade hit Pong into homes, proving the commercial viability of dedicated consoles.</div>
+                </div>
+            </div>
+
+            <div class="timeline-item fairchild">
+                <div class="console-details">
+                    <h3>Fairchild Channel F</h3>
+                    <div class="date">November 1976</div>
+                    <div class="significance">Introduced the use of ROM cartridges, allowing players to switch games-a key innovation.</div>
+                </div>
+            </div>
+
+            <div class="timeline-item atari">
+                <div class="console-details">
+                    <h3>Atari 2600 (VCS)</h3>
+                    <div class="date">September 1977</div>
+                    <div class="significance">Popularized cartridge-based gaming and became a massive commercial success.</div>
+                </div>
+            </div>
+
+            <div class="timeline-item mattel">
+                <div class="console-details">
+                    <h3>Mattel Intellivision</h3>
+                    <div class="date">1980</div>
+                    <div class="significance">Offered improved graphics and sound over the Atari 2600.</div>
+                </div>
+            </div>
+
+            <div class="timeline-item coleco">
+                <div class="console-details">
+                    <h3>Coleco ColecoVision</h3>
+                    <div class="date">August 1982</div>
+                    <div class="significance">Brought near-arcade-quality visuals to home systems.</div>
+                </div>
+            </div>
+
+            <div class="timeline-item nintendo">
+                <div class="console-details">
+                    <h3>Nintendo Entertainment System (NES)</h3>
+                    <div class="date">October 1985</div>
+                    <div class="significance">Revitalized the U.S. gaming industry after the 1983 crash.</div>
+                </div>
+            </div>
+
+            <div class="timeline-item sega">
+                <div class="console-details">
+                    <h3>Sega Master System</h3>
+                    <div class="date">June 1986</div>
+                    <div class="significance">Marked Sega's first major challenge to Nintendo.</div>
+                </div>
+            </div>
+
+            <div class="timeline-item nec">
+                <div class="console-details">
+                    <h3>NEC TurboGrafx-16</h3>
+                    <div class="date">August 1989</div>
+                    <div class="significance">First home console marketed as a '16-bit' system.</div>
+                </div>
+            </div>
+
+            <div class="timeline-item sega">
+                <div class="console-details">
+                    <h3>Sega Genesis</h3>
+                    <div class="date">August 1989</div>
+                    <div class="significance">Successfully challenged Nintendo's dominance.</div>
+                </div>
+            </div>
+
+            <div class="timeline-item nintendo">
+                <div class="console-details">
+                    <h3>Nintendo Super Nintendo Entertainment System (SNES)</h3>
+                    <div class="date">August 1991</div>
+                    <div class="significance">Strengthened Nintendo's hold on the industry.</div>
+                </div>
+            </div>
+
+            <div class="timeline-item sony">
+                <div class="console-details">
+                    <h3>Sony PlayStation</h3>
+                    <div class="date">September 1995</div>
+                    <div class="significance">Revolutionized gaming with CD-ROM storage.</div>
+                </div>
+            </div>
+
+            <div class="timeline-item nintendo">
+                <div class="console-details">
+                    <h3>Nintendo 64</h3>
+                    <div class="date">September 1996</div>
+                    <div class="significance">Introduced 3D analog stick controls.</div>
+                </div>
+            </div>
+
+            <div class="timeline-item sega">
+                <div class="console-details">
+                    <h3>Sega Dreamcast</h3>
+                    <div class="date">September 1999</div>
+                    <div class="significance">First console with a built-in modem for online play.</div>
+                </div>
+            </div>
+
+            <div class="timeline-item sony">
+                <div class="console-details">
+                    <h3>Sony PlayStation 2</h3>
+                    <div class="date">October 2000</div>
+                    <div class="significance">Became the best-selling console of all time.</div>
+                </div>
+            </div>
+
+            <div class="timeline-item microsoft">
+                <div class="console-details">
+                    <h3>Microsoft Xbox</h3>
+                    <div class="date">November 2001</div>
+                    <div class="significance">Marked Microsoft's entry into console gaming.</div>
+                </div>
+            </div>
+
+            <div class="timeline-item nintendo">
+                <div class="console-details">
+                    <h3>Nintendo Wii</h3>
+                    <div class="date">November 2006</div>
+                    <div class="significance">Pioneered motion controls and mainstream appeal.</div>
+                </div>
+            </div>
+
+            <div class="timeline-item sony">
+                <div class="console-details">
+                    <h3>Sony PlayStation 3</h3>
+                    <div class="date">November 2006</div>
+                    <div class="significance">Brought high-definition gaming and Blu-ray.</div>
+                </div>
+            </div>
+
+            <div class="timeline-item sony">
+                <div class="console-details">
+                    <h3>Sony PlayStation 4</h3>
+                    <div class="date">November 2013</div>
+                    <div class="significance">Dominated the 8th generation with strong third-party support.</div>
+                </div>
+            </div>
+
+            <div class="timeline-item nintendo">
+                <div class="console-details">
+                    <h3>Nintendo Switch</h3>
+                    <div class="date">March 2017</div>
+                    <div class="significance">Redefined hybrid gaming with handheld and home play.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="chart-container">
+            <h2 class="chart-title">Consoles Released by Company</h2>
+            <div class="chart">
+                <div class="bar">
+                    <div class="bar-fill nintendo-bar" style="height: 150px;">
+                        <div class="bar-value">5</div>
+                    </div>
+                    <div class="bar-label">NINTENDO</div>
+                </div>
+                <div class="bar">
+                    <div class="bar-fill sony-bar" style="height: 120px;">
+                        <div class="bar-value">4</div>
+                    </div>
+                    <div class="bar-label">SONY</div>
+                </div>
+                <div class="bar">
+                    <div class="bar-fill sega-bar" style="height: 90px;">
+                        <div class="bar-value">3</div>
+                    </div>
+                    <div class="bar-label">SEGA</div>
+                </div>
+                <div class="bar">
+                    <div class="bar-fill atari-bar" style="height: 60px;">
+                        <div class="bar-value">2</div>
+                    </div>
+                    <div class="bar-label">ATARI</div>
+                </div>
+                <div class="bar">
+                    <div class="bar-fill microsoft-bar" style="height: 30px;">
+                        <div class="bar-value">1</div>
+                    </div>
+                    <div class="bar-label">MICROSOFT</div>
+                </div>
+                <div class="bar">
+                    <div class="bar-fill magnavox-bar" style="height: 30px;">
+                        <div class="bar-value">1</div>
+                    </div>
+                    <div class="bar-label">MAGNAVOX</div>
+                </div>
+                <div class="bar">
+                    <div class="bar-fill fairchild-bar" style="height: 30px;">
+                        <div class="bar-value">1</div>
+                    </div>
+                    <div class="bar-label">FAIRCHILD</div>
+                </div>
+                <div class="bar">
+                    <div class="bar-fill mattel-bar" style="height: 30px;">
+                        <div class="bar-value">1</div>
+                    </div>
+                    <div class="bar-label">MATTEL</div>
+                </div>
+                <div class="bar">
+                    <div class="bar-fill coleco-bar" style="height: 30px;">
+                        <div class="bar-value">1</div>
+                    </div>
+                    <div class="bar-label">COLECO</div>
+                </div>
+                <div class="bar">
+                    <div class="bar-fill nec-bar" style="height: 30px;">
+                        <div class="bar-value">1</div>
+                    </div>
+                    <div class="bar-label">NEC</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
